@@ -60,9 +60,6 @@ function gis_result_list( id_field )
 				}
 			}
 		});
-
-		/*mapObject.render( $("#" + id_field + "_elements-list") );
-		$(".directory-elem").filter(':odd').addClass("odd");*/
 	});
 }
 
@@ -95,20 +92,11 @@ function addEntityOnMap ( idField, xValue, yValue, labelHtml, labelText, sideNod
 						label: labelHtml
 					})
 			);
-		}, 1000);
-		// Activate popup
-		try {
+			// Activate popup
 			$("body").trigger(
 					jQuery.Event("GisLocalization.activatePopup")
 				);
-		} catch(e) {
-			alert(e);
-		}
-	
-		/*var element = document.createElement("div");
-		$(element).addClass( "directory-elem" );
-		$(element).append( labelText );
-		sideNode.append( $(element) );*/
+		}, 1000);
 	});
 
 }
