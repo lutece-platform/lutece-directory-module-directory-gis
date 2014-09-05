@@ -4,7 +4,7 @@
     <!-- Plugin Informations -->
 	<name>directory-gis</name>
 	<class>fr.paris.lutece.plugins.directory.modules.gis.service.DirectoryGisPlugin</class>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<description>module.directory.gis.module.description</description>
 	<documentation/>
 	<installation/>
